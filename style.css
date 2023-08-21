@@ -5,3 +5,36 @@
    border-radius: 5px;
    border: 1px solid;
 }
+li {
+    list-style: none;
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ysabeau SC', sans-serif;
+    color: gray;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+small {
+    margin-left: 320px;
+}
+h1 {
+    font-size: 30px;
+    font-weight: 10px;
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ysabeau SC', sans-serif;
+    color: hotpink;
+}
+.row {
+    color: skyblue;
+}
+strong {
+    font-size: 50px;
+    
+}
+img {
+    margin-right: 10px;
+}
+.percip-wind {
+    margin-bottom: 30px;
+}
