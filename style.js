@@ -1,4 +1,4 @@
-let apikey="b344b5f6tf2co3e462662ea6f4a0400c";
-let apiURL = `https://api.shecodes.io/weather/v1/current?query=Chicago&key={b344b5f6tf2co3e462662ea6f4a0400c}`;
+let apikey = "ca0db41e2e878c74a1dfc7ffece370d4";
+let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=Chicago&appid=${apikey}&units=metric`;
 
 console.log(apiURL);
