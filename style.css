@@ -10,6 +10,7 @@ li {
     font-family: 'Tilt Prism', cursive;
     font-family: 'Ysabeau SC', sans-serif;
     color: gray;
+    text-transform: capitalize;
 }
 ul {
     margin: 0;
