@@ -11,6 +11,7 @@ li {
     font-family: 'Ysabeau SC', sans-serif;
     color: gray;
     text-transform: capitalize;
+    
 }
 li ::first-letter {
     text-transform: capitalize;
@@ -32,13 +33,18 @@ h1 {
 .row {
     color: skyblue;
 }
-strong {
-    font-size: 50px;
-    
-}
 img {
     margin-right: 10px;
 }
 .percip-wind {
     margin-bottom: 30px;
+}
+.li-date {
+    font-size: 25px;
+}
+strong {
+    font-size: 40px;
+}
+h2 {
+    font-size: 20px;
 }
