@@ -8,7 +8,7 @@ function formatDate(timestamp) {
     if (minutes < 10) {
         minutes = `0${minutes}`;
     }
-    let days =["Sunday", "Monday", "Tuesday", "Wedmesday", "Thursday", "Friday", "Saturday"];
+    let days =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let day = days[date.getDay()];
     return `${day} ${hours}:${minutes}`;
 }
@@ -32,9 +32,24 @@ function displayTemperature(response) {
  
 );
 }
-  let city= "Chicago"
-let apiKey = "ca0db41e2e878c74a1dfc7ffece370d4";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+ 
+function search(city) {
+    let apiKey = "ca0db41e2e878c74a1dfc7ffece370d4";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayTemperature);
 
-  axios.get(apiUrl).then(displayTemperature);
+}
+function handlesearch(event) {
+    event.preventDefault();
+    let cityNameElement = document.querySelector("#city-name");
+    search(cityNameElement.value);
+}
+
+search("Chicago");
+
+
+  let form = document.querySelector("#search-form");
+  form.addEventListener("submit", handlesearch);
+
+
 
