@@ -32,9 +32,11 @@ h1 {
 }
 .row {
     color: skyblue;
+    margin-bottom: -30px;
 }
 img {
     margin-right: 10px;
+    margin-top: -15px;
 }
 .percip-wind {
     margin-bottom: 30px;
@@ -47,4 +49,5 @@ strong {
 }
 h2 {
     font-size: 20px;
+
 }
