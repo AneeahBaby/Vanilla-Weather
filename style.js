@@ -39,7 +39,7 @@ function search(city) {
     axios.get(apiUrl).then(displayTemperature);
 
 }
-function handlesearch(event) {
+function search(event) {
     event.preventDefault();
     let cityNameElement = document.querySelector("#city-name");
     search(cityNameElement.value);
@@ -47,17 +47,17 @@ function handlesearch(event) {
 
 function displayFahrenheitTemp(event) {
     event.preventDefault();
-    let temperatureElement= document.querySelector("#temperature");
-    let fahrenheitTemp = (temperatureElement.innerHTML * 9) / 5 + 32;
+    let temperatureElement = document.querySelector("#temperature");
+    let fahrenheitTemp = (98 * 9) / 5 + 32;
     temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
-search("Chicago");
-
-
-  let form = document.querySelector("#search-form");
+let form = document.querySelector("#search-form");
   form.addEventListener("submit", handlesearch);
 
- let fahrenheitLink = document.querySelector("#fahrenheit-Link");
- fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+ let fahrenheitlink = document.querySelector("#fahrenheit-link");
+ fahrenheitlink.addEventListener("click", displayFahrenheitTemp);
 
+
+
+search("Chicago");
