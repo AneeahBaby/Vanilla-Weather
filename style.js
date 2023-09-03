@@ -28,9 +28,7 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
- 
-);
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
  
 function search(city) {
@@ -39,7 +37,7 @@ function search(city) {
     axios.get(apiUrl).then(displayTemperature);
 
 }
-function search(event) {
+function handlesearch(event) {
     event.preventDefault();
     let cityNameElement = document.querySelector("#city-name");
     search(cityNameElement.value);
@@ -61,3 +59,4 @@ let form = document.querySelector("#search-form");
 
 
 search("Chicago");
+
