@@ -60,16 +60,15 @@ function displayCelciusTemp(event) {
     temperatureElement.innerHTML = Math.round(celciusTemp);
 }
 
-let celciusTemp = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handlesearch);
 
- let fahrenheitlink = document.querySelector("#fahrenheit-link");
- fahrenheitlink.addEventListener("click", displayFahrenheitTemp);
+let fahrenheitlink = document.querySelector("#fahrenheit-link");
+fahrenheitlink.addEventListener("click", displayFahrenheitTemp);
 
-let celciusLink = document.querySelector("#celcius-Link");
-celciusLink.addEventListener("click", displayCelciusTemp);
+let celciuslink = document.querySelector("#celcius-link");
+celciuslink.addEventListener("click", displayCelciusTemp);
 
 
 search("Chicago");
