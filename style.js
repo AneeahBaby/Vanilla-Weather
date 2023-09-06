@@ -46,7 +46,7 @@ function handlesearch(event) {
 function displayFahrenheitTemp(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
-    let fahrenheitTemp = (98 * 9) / 5 + 32;
+    let fahrenheitTemp = (temperatureElement.innerHTML * 9) / 5 + 32;
     temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
