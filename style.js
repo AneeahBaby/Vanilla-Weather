@@ -22,7 +22,12 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  
+  
+  celciusTemp = response.data.main.temp;
+  
+  
+  temperatureElement.innerHTML = Math.round(celciusTemp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
@@ -46,9 +51,11 @@ function handlesearch(event) {
 function displayFahrenheitTemp(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
-    let fahrenheitTemp = (temperatureElement.innerHTML * 9) / 5 + 32;
+    let fahrenheitTemp = (celciusTemp * 9) / 5 + 32;
     temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
+
+let celciusTemp = null;
 
 let form = document.querySelector("#search-form");
   form.addEventListener("submit", handlesearch);
