@@ -60,6 +60,7 @@ function displayCelciusTemp(event) {
     temperatureElement.innerHTML = Math.round(celciusTemp);
 }
 
+let celciusTemp = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handlesearch);
