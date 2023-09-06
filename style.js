@@ -63,7 +63,7 @@ function displayCelciusTemp(event) {
 let celciusTemp = null;
 
 let form = document.querySelector("#search-form");
-  form.addEventListener("submit", handlesearch);
+form.addEventListener("submit", handlesearch);
 
  let fahrenheitlink = document.querySelector("#fahrenheit-link");
  fahrenheitlink.addEventListener("click", displayFahrenheitTemp);
