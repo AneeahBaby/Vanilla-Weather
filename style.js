@@ -56,7 +56,7 @@ function displayFahrenheitTemp(event) {
 
 function displayCelciusTemp(event) {
     event.preventDefault();
-    temperatureElement = document.querySelector("#temperature");
+    let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = Math.round(celciusTemp);
 }
 
