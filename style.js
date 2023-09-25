@@ -30,7 +30,7 @@ function displayForecast() {
                 <span class="weather-forecast-temp-max"> 18º </span>
                 <span class="weather-forecast-temp-min"> 12º </span>
                     </div>
-                    </div>
+                    
                 `;
           });
                 forecastHTML = forecastHTML + `</div>`;
